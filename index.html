@@ -135,11 +135,11 @@
     }
 
     pre.bash::before {
-      content: 'Bash';
+      content: 'Bash (MAC/Linux)';
     }
 
     pre.powershell::before {
-      content: 'PowerShell';
+      content: 'PowerShell (Windows)';
     }
 
     .copy {
@@ -192,53 +192,12 @@
     p {
       margin-bottom: 20px;
     }
-
-    .text {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 15px;
-      display: block;
-      /* stroke: #fff; */
-      stroke: #b9f3ff;
-      fill: #b9f3ff;
-    }
-    .text-stroke {
-      fill: none;
-      stroke: #fff;
-      stroke-width: 3;
-      stroke-dashoffset: 0;
-      stroke-dasharray: 900;
-      stroke-linecap: butt;
-      stroke-linejoin: round;
-    }
-    .text-stroke2 {
-      stroke: #b9f3ff;
-      stroke-dashoffset: -46;
-      animation: dash 2s linear forwards;
-    }
-    @keyframes dash {
-      100% {
-        stroke-dashoffset: 0;
-      }
-    }
   </style>
 </head>
 
 <body class="body">
   <header>
     <img src="./logo.png" alt="logo" class="logo">
-    <!-- <svg viewBox="0 0 200 20">
-      <text text-anchor="start" x="66" y="15" class="text text-stroke" clip-path="url(#text1)">
-        goproxy.io
-      </text>
-      <text text-anchor="start" x="66" y="15" class="text" clip-path="url(#text1)">
-        goproxy.io
-      </text>
-      <defs>
-        <clipPath id="text1">
-          <text text-anchor="start" x="66" y="15" class="text">goproxy.io</text>
-        </clipPath>
-      </defs>
-    </svg> -->
     <h1>goproxy.io</h1>
 
     <p class="sub-header">
