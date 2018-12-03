@@ -27,6 +27,7 @@
       flex-direction: column;
       background: #2B2E3B;
       color: #b7b7b7;
+      font-family: sans-serif,Helvetica Neue,Helvetica,Arial,sans-serif
     }
 
     header {
@@ -48,7 +49,8 @@
     }
 
     header h1 {
-      font-size: 30px;
+      font-size: 100px;
+      color: #b9f3ff;
     }
 
     .logo {
@@ -65,11 +67,17 @@
 
     .github {
       padding-left: 4px;
-      background: #fff;
+      /* background: #fff; */
+      background-color: #eff3f6;
+      background-image: -webkit-linear-gradient(top, #fafbfc, #e4ebf0);
+      background-image: -moz-linear-gradient(top, #fafbfc, #e4ebf0);
+      background-image: linear-gradient(to bottom, #fafbfc, #e4ebf0);
+      background-repeat: repeat-x;
+      background-size: 110% 110%;
       text-align: center;
       font-size: 16px;
       border-radius: 4px;
-      margin-right: 5px;
+      margin-right: 7px;
     }
     .github svg {
       width: 18px;
@@ -80,9 +88,10 @@
       position: relative;
       background: #fff;
       text-align: center;
-      font-size: 16px;
+      font-size: 14px;
       border-radius: 4px;
-      padding: 0 10px;
+      padding: 0 5px;
+      vertical-align: middle;
     }
     .star::before {
       position: absolute;
@@ -126,11 +135,11 @@
     }
 
     pre.bash::before {
-      content: 'Bash (MAC/Linux)';
+      content: 'Bash';
     }
 
     pre.powershell::before {
-      content: 'PowerShell (Windows)';
+      content: 'PowerShell';
     }
 
     .copy {
@@ -188,10 +197,13 @@
       font-family: Arial, Helvetica, sans-serif;
       font-size: 15px;
       display: block;
+      /* stroke: #fff; */
+      stroke: #b9f3ff;
+      fill: #b9f3ff;
     }
     .text-stroke {
       fill: none;
-      stroke: #2B2E3B;
+      stroke: #fff;
       stroke-width: 3;
       stroke-dashoffset: 0;
       stroke-dasharray: 900;
@@ -214,11 +226,11 @@
 <body class="body">
   <header>
     <img src="./logo.png" alt="logo" class="logo">
-    <svg viewBox="0 0 200 20">
+    <!-- <svg viewBox="0 0 200 20">
       <text text-anchor="start" x="66" y="15" class="text text-stroke" clip-path="url(#text1)">
         goproxy.io
       </text>
-      <text text-anchor="start" x="66" y="15" class="text text-stroke text-stroke2" clip-path="url(#text1)">
+      <text text-anchor="start" x="66" y="15" class="text" clip-path="url(#text1)">
         goproxy.io
       </text>
       <defs>
@@ -226,7 +238,8 @@
           <text text-anchor="start" x="66" y="15" class="text">goproxy.io</text>
         </clipPath>
       </defs>
-    </svg>
+    </svg> -->
+    <h1>goproxy.io</h1>
 
     <p class="sub-header">
       A global proxy for go modules
@@ -327,7 +340,7 @@
       currentFocus.focus();
       var lastEle = ele.lastElementChild
       lastEle.innerText = 'Copied'
-      setTimeout(() => lastEle.innerText = 'Copy', 1000)
+      setTimeout(function () { lastEle.innerText = 'Copy' }, 1000)
     }
   }
   // github - star
@@ -351,6 +364,7 @@
   });
 </script>
 <script>
-  
+
 </script>
+
 </html>
